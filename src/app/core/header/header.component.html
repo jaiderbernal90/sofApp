@@ -1,0 +1,23 @@
+<header>
+    <div class="container__logo">      
+        <h1 [routerLink]="['/']" routerLinkActive="router-link-active">SoftApp</h1>
+    </div> 
+
+    <div class="menu__icon" [class.menu-burguer-class]="toggleIcon" (click)="openMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <div class="container__menu" [class.hide-menu]="hideMenu">
+        @for (item of menuList; track $index) {
+            <div class="menu__item"><a [routerLink]="['/', item | lowercase]" routerLinkActive="router-link-active">{{ item }}</a></div>
+        }
+        <div class="ml-10 mr-5">
+            <button class="btn mr-5" nz-button nzType="primary" [routerLink]="['/', 'iniciar-sesion']" routerLinkActive="router-link-active">Iniciar Sesión</button>
+        </div>
+        <div>
+            <button class="btn" nz-button nzType="default" [routerLink]="['/', 'registro']" routerLinkActive="router-link-active">Registrar</button>
+        </div>
+    </div>
+</header>
