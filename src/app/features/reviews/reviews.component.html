@@ -1,0 +1,15 @@
+<app-layout>
+    <ng-container ngProjectAs="container-body">
+        <section class="mb-88 section mt-48">
+            <h2 class="title__section mt-64 ">Reseñas</h2>
+            <p class="description__section mb-76 w-80">Cada reseña refleja nuestro compromiso con la excelencia y la satisfacción del cliente. Explora las historias detrás de nuestros proyectos, descubre cómo hemos superado desafíos y llevado a cabo ideas innovadoras. En cada testimonio, encontrarás no solo palabras, sino también la pasión y dedicación que impulsan nuestro trabajo diario. Únete a nosotros en este viaje a través de las experiencias de aquellos que han vivido la transformación con nosotros. </p>
+            <div class="grid__reviews mt-48 mb-96">
+                @for (item of reviews; track $index) {
+                    <app-card-reviews [fullName]="item.fullname" [role]="item.role" [img]="item.img" [review]="item.review"></app-card-reviews>
+                }
+            </div>   
+            <img class="bg__vector left" src="../../assets/img/bg_vector_left.svg">
+            <img class="bg__vector rigth" src="../../assets/img/bg_vector_right.svg">
+        </section>
+    </ng-container>
+</app-layout>

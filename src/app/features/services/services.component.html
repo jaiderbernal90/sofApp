@@ -1,0 +1,16 @@
+<app-layout>
+    <ng-container ngProjectAs="container-body">
+        <section class="mt-88 mb-88 section mt-48">
+            <h2 class="title__section">Servicios</h2>
+            <p class="description__section mb-76 w-80">Descubre cómo podemos llevar tu visión al siguiente nivel con nuestros servicios especializados. Desde desarrollo de software a medida hasta consultoría tecnológica, estamos comprometidos en proporcionar soluciones innovadoras que impulsen tu éxito. Nuestro equipo de expertos está aquí para ayudarte a alcanzar tus objetivos, ofreciéndote servicios adaptados a tus necesidades específicas. Explora nuestra gama de servicios y descubre cómo podemos colaborar para transformar tu visión en realidad. </p>
+
+            <div class="grid_cards">
+                @for (item of services; track $index) {
+                    <app-card [title]="item.title" [description]="item.description" [img]="item.img"></app-card>
+                }
+            </div>
+            <img class="bg__vector left" src="../../assets/img/bg_vector_left.svg">
+            <img class="bg__vector rigth" src="../../assets/img/bg_vector_right.svg">
+        </section>
+    </ng-container>
+</app-layout>

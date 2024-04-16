@@ -1,0 +1,38 @@
+<app-layout>
+    <ng-container ngProjectAs="container-body">
+        <section class="mt-88 mb-88 section mt-48">
+            <h2 class="title__section">Usuarios</h2>
+            <p class="description__section mb-76 w-80">Bienvenido a nuestra lista de usuarios registrados en el sistema,
+                donde la diversidad se une en un solo lugar. </p>
+
+            <div class="w-80">
+                <nz-table #basicTable [nzData]="listOfData">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Correo Electronico</th>
+                            <th>Rol</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for (data of basicTable.data; track $index) {
+                            <tr>
+                                <td>{{ data?.name }}</td>
+                                <td>{{ data?.email }}</td>
+                                <td>{{ data?.role }}</td>
+                                <td>
+                                    <div class="icon icon-change"></div>
+                                    <nz-divider nzType="vertical"></nz-divider>
+                                    <div class="icon icon-delete"></div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </nz-table>
+            </div>
+            <img class="bg__vector left" src="../../assets/img/bg_vector_left.svg">
+            <img class="bg__vector rigth" src="../../assets/img/bg_vector_right.svg">
+        </section>
+    </ng-container>
+</app-layout>
