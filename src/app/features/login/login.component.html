@@ -1,0 +1,27 @@
+<app-layout>
+    <ng-container ngProjectAs="container-body">
+        <section class="mb-124 section mt-148">
+            <h2 class="title__section">Iniciar sesión</h2>
+            <p class="description__section mb-76 w-80">¡Bienvenido de vuelta! Estamos encantados de verte de nuevo. Inicia sesión para acceder a tu cuenta personalizada y sumergirte en una experiencia única diseñada especialmente para ti.</p>
+            <div class="content__form">
+                <form nz-form [formGroup]="form" (ngSubmit)="submitForm()" nzLayout="vertical"
+                    class="content__form-form">
+                    <nz-form-item>
+                        <input nz-input formControlName="email" placeholder="Correo Electronico" />
+                    </nz-form-item>
+                    <nz-form-item>
+                        <input type="password" nz-input formControlName="password" placeholder="Contraseña" />
+                    </nz-form-item>
+                    <nz-form-item>
+                        <nz-form-control [nzOffset]="10" [nzSpan]="10">
+                            <button nz-button nzType="primary" class="btn btn__form"
+                                [disabled]="form.invalid">ENVIAR</button>
+                        </nz-form-control>
+                    </nz-form-item>
+                </form>
+            </div>
+            <img class="bg__vector left" src="../../assets/img/bg_vector_left.svg">
+            <img class="bg__vector rigth" src="../../assets/img/bg_vector_right.svg">
+        </section>
+    </ng-container>
+</app-layout>

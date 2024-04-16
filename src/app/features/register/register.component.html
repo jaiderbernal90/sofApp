@@ -1,0 +1,30 @@
+<app-layout>
+    <ng-container ngProjectAs="container-body">
+        <section class="mb-88 section mt-48">
+            <h2 class="title__section">Registrar</h2>
+            <p class="description__section mb-76 w-80">¡Únete a nuestra comunidad hoy mismo! Con nuestro proceso de registro fácil y seguro, puedes acceder a una experiencia personalizada diseñada especialmente para ti. Regístrate para obtener acceso exclusivo a contenido premium, características adicionales y ofertas especiales. Si ya eres parte de nuestra comunidad, simplemente inicia sesión para disfrutar de todos los beneficios que ofrecemos. Estamos comprometidos en brindarte una experiencia sin complicaciones, donde tu seguridad y comodidad son nuestra prioridad. Únete ahora y descubre todo lo que tenemos preparado para ti.</p>
+            <div class="content__form">
+                <form nz-form [formGroup]="form" (ngSubmit)="submitForm()" nzLayout="vertical"
+                    class="content__form-form">
+                    <nz-form-item>
+                        <input nz-input formControlName="name" placeholder="Nombre" />
+                    </nz-form-item>
+                    <nz-form-item>
+                        <input nz-input formControlName="email" placeholder="Correo Electronico" />
+                    </nz-form-item>
+                    <nz-form-item>
+                        <input type="password" nz-input formControlName="password" placeholder="Contraseña" />
+                    </nz-form-item>
+                    <nz-form-item>
+                        <nz-form-control [nzOffset]="10" [nzSpan]="10">
+                            <button nz-button nzType="primary" class="btn btn__form"
+                                [disabled]="form.invalid">ENVIAR</button>
+                        </nz-form-control>
+                    </nz-form-item>
+                </form>
+            </div>
+            <img class="bg__vector left" src="../../assets/img/bg_vector_left.svg">
+            <img class="bg__vector rigth" src="../../assets/img/bg_vector_right.svg">
+        </section>
+    </ng-container>
+</app-layout>
