@@ -1,0 +1,86 @@
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background: #ECECEC;
+    .container__logo{
+        h2{
+            font-size: 2.4rem;
+            font-weight: bold;
+            margin: 0;
+            padding-bottom: 8px;
+        }
+    }
+    .content__footer{
+        width: 80%;    
+        display: grid;
+        grid-template-columns: repeat(3, minmax(300px, 1fr));
+        padding: 40px 0;    
+        gap: 32px;
+    }
+    .groups__icon{
+        display: flex;
+        gap: 32px;
+        margin-top: 32px;
+    }
+}
+
+.container__links{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    gap: 16px;
+    a{
+        text-decoration: none;
+        color: #353535;
+        font-size: 1.2rem;
+    }
+}
+
+.container__form{
+    display: flex;
+    flex-direction: column;
+    // max-width: 200px;
+    .ant-input {
+        padding: 7px 11px;
+        background: none;
+        background-color: none;
+        border: none;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+.icon {
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.icon-facebook {
+    width: 6px;
+    height: 10px;
+    background-image: url(../../assets/img/facebook.svg);
+}
+
+.icon-twitter{
+    background-image: url(../../assets/img/twitter.svg);
+}
+
+.icon-instagram{
+    background-image: url(../../assets/img/instagram.svg);
+}
+
+.icon-delete {
+    width: 16px;
+    height: 16px;
+    background-image: url(../../assets/img/delete.svg);
+}
+
+.icon-change {
+    width: 16px;
+    height: 16px;
+    background-image: url(../../assets/img/change.svg);
+}

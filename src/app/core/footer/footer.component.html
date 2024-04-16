@@ -1,0 +1,29 @@
+<footer>
+    <div class="content__footer">
+        <section class="container__logo">
+            <h2>SoftApp</h2>
+            <span>Copyright © 2024.</span>
+            <div class="groups__icon">
+                <div class="icon icon-facebook"></div>
+                <div class="icon icon-twitter"></div>
+                <div class="icon icon-instagram"></div>
+            </div>
+        </section>
+        <section class="container__links">
+            <a [routerLink]="['/servicios']" class="fw-bold">Servicios</a>
+            <a [routerLink]="['/contacto']" routerLinkActive="router-link-active" class="">Contacto</a>
+            <a [routerLink]="['/reseñas']" routerLinkActive="router-link-active" class="">Reseñas</a>
+            <a [routerLink]="['/iniciar-sesion']" routerLinkActive="router-link-active" class="">Iniciar Sesión</a>
+            <a [routerLink]="['/usuarios']" routerLinkActive="router-link-active" class="">Usuarios</a>
+        </section>
+        <section class="container__form">
+            <h3>Suscribete a nuestra web </h3>
+            <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
+                <input type="text" nz-input placeholder="Correo Electronico" />
+            </nz-input-group>
+            <ng-template #suffixIconButton>
+                <button nz-button nzType="primary" class="btn btn__terciary btn-rounded" nzSearch><span nz-icon nzType="right" nzTheme="outline"></span></button>
+            </ng-template>
+        </section>
+    </div>
+</footer>
