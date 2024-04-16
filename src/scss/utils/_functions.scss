@@ -1,0 +1,62 @@
+@for $i from 0 through 190 {
+    .mb-#{$i} {
+        margin-bottom: #{$i}px;
+    }
+    .mt-#{$i} {
+        margin-top: #{$i}px;
+    }
+    .mr-#{$i} {
+        margin-right: #{$i}px;
+    }
+    .ml-#{$i} {
+        margin-left: #{$i}px;
+    }
+    .m-#{$i} {
+        margin: #{$i}px;
+    }
+    .p-#{$i} {
+        padding: #{$i}px;
+    }
+    .pb-#{$i} {
+        padding-bottom: #{$i}px;
+    }
+    .pt-#{$i} {
+        padding-top: #{$i}px;
+    }
+    .pr-#{$i} {
+        padding-right: #{$i}px;
+    }
+    .pl-#{$i} {
+        padding-left: #{$i}px;
+    }
+    .border-r-#{$i}{
+        border-radius: #{$i}px;
+    }
+}
+
+$incremento: 0.1;
+@for $i from 1 through 5 {
+    @for $j from 1 through 9 {
+        .fz-#{$i}-#{$j} {
+            $font-size: $i * 1 + calc($j / 10);
+            font-size: #{$font-size}rem;
+        }
+    }
+}
+
+@for $i from 8 through 64 {
+    .gap-#{$i} {
+        gap: #{$i}px;
+    }
+}
+
+@for $i from 2 through 20 {
+    .grid-columns-#{$i} {
+        $width-percent: calc(100 / $i) + "%"; 
+        grid-template-columns: repeat(auto-fill, minmax(#{$width-percent}, 1fr)); 
+    }
+
+    .grid-rows-#{$i} {
+        grid-template-rows: repeat(#{$i}, 1fr);
+    }
+}

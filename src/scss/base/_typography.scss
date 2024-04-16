@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+em,
+b,
+strong {
+    font-family: $font;
+    font-size: 10px;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+h1 {
+    font-weight: bold;
+}

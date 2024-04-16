@@ -1,0 +1,114 @@
+main{
+    display: flex;
+    flex-direction: column;
+}
+body{
+    min-height: 100vh;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 200px;
+    height: auto;
+}
+.bg-secondary{
+    background: #ECF4FD;
+}
+
+.title__section{
+    font-size: 3.2rem;
+    color: #353535;
+}
+
+.description__section{
+    width: 45%;
+    font-size: 1.8rem;
+    color: #999999;
+    text-align: center;
+}
+
+.title__banner{
+    font-size: 4.8rem;
+    color: #fff;
+    width: 50%;
+}
+
+.description__banner{
+    font-size: 2.4rem;
+    color: #fff;
+}
+
+.banner{
+    background-image: url(../../assets/img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+} 
+
+.container__banner{
+    min-height: 528px;
+    height: auto;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.content__information{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15%;
+}
+
+.content__form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    .content__form-form{
+        width: 55%;
+    }
+}
+
+.btn__form{
+    padding: 18px 40px;
+    *{
+        font-size: 1.2rem;
+    }
+}
+
+.img__bg{
+    position: absolute;
+    left: 32px;
+    top: 30%;
+    width: 200px;
+    height: 200px;
+}
+
+@media screen and (max-width: 1300px) {
+    .title__banner{
+        font-size: 3.2rem;
+        width: 100%;
+    }
+    .content__information{
+        padding-left: 2%;
+    }
+    .description__section{
+        width: 90%;
+    }
+}

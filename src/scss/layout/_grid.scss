@@ -1,0 +1,51 @@
+.grid_cards {
+    position: relative;
+    width: 70%;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+}
+
+.grid__reviews{
+    position: relative;
+    width: 85%;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    z-index: 2;
+}
+
+.fw-bold{
+    font-weight: bold;
+}
+
+.w-80{
+    width: 80%;
+}
+
+.bg__vector{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    user-select: none;
+    z-index: 0;
+    &.left{
+        bottom: 15%;
+        left: 0;
+    }
+    &.rigth{
+        top: 10%;
+        right: 0;
+    }
+}
+
+
+@media (max-width: 999px) {
+    .grid_cards {
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+    }
+
+    .grid__reviews{
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+    }
+}

@@ -1,0 +1,41 @@
+.pi-custom::before {
+    position: absolute;
+    width: 18px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pi-height-32::before {
+    height: 24px;
+}
+
+.pi-mail::before {
+    content: "";
+    background-image: url("../../assets/img/icons/mail.svg");
+}
+
+.pi-linkedin::before {
+    content: "";
+    background-image: url("../../assets/img/icons/linkedin.svg");
+}
+
+.pi-send::before {
+    content: "";
+    background-image: url("../../assets/img/icons/send.svg");
+}
+
+.pi-message::before {
+    content: "";
+    background-image: url("../../assets/img/icons/message.svg");
+}
+
+.pi-message-circle::before {
+    content: "";
+    background-image: url("../../assets/img/icons/message-circle.svg");
+}
+
+.pi-inbox::before {
+    content: "";
+    background-image: url("../../assets/img/icons/inbox.svg");
+}

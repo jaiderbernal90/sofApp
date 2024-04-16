@@ -1,0 +1,27 @@
+.ant-btn-primary{
+    background-color: $color-primary;
+    border-color: $color-primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: normal;
+}
+
+.btn__banner, .btn__banner *{
+    font-size: 1.6rem;
+}
+
+.btn__terciary{
+    width: 100%;
+    background: #37474F;
+    border-color: #37474F;
+    padding: 20px;
+    *, &{
+        font-size: 1.5rem;
+    }
+}
+
+.btn-rounded{
+    border-radius: 20px;
+    padding: 8px;
+}
